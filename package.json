@@ -19,9 +19,9 @@
     "isomorphic-dompurify": "^3.10.0",
     "leaflet": "^1.9.4",
     "lucide-react": "^1.11.0",
-    "next": "16.2.4",
-    "react": "19.2.4",
-    "react-dom": "19.2.4",
+    "next": "15.1.0",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
     "react-leaflet": "^5.0.0",
     "react-quill": "^2.0.0",
     "react-quill-new": "^3.8.3",
@@ -35,7 +35,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "16.2.4",
+    "eslint-config-next": "15.1.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
