@@ -1,4 +1,38 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+.prose {
+  max-width: 75ch !important;
+  width: 100%;
+}
+
+.prose img {
+  max-width: 100% !important;
+  height: auto !important;
+  border-radius: 0.75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prose * {
+  hyphens: none !important;
+  -webkit-hyphens: none !important;
+  -moz-hyphens: none !important;
+  -ms-hyphens: none !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  text-align: left !important;
+}
+
+.prose p, .prose span, .prose div, .prose li {
+  text-align: left !important;
+}
+
+@media (max-width: 640px) {
+  .prose p, .prose span, .prose div, .prose li {
+    text-align: left;
+  }
+}
 
 :root {
   --background: #ffffff;
