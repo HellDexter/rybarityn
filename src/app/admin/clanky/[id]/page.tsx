@@ -4,7 +4,7 @@ import { ArrowLeft } from 'lucide-react'
 import ArticleEditForm from './ArticleEditForm'
 import { redirect } from 'next/navigation'
 
-export default async function EditArticlePage({ params }: { params: { id: string } }) {
+export default async function EditArticlePage({ params }: { params: Promise<{ id: string }> }) {
   const supabase = await createClient()
   const resolvedParams = await params
 

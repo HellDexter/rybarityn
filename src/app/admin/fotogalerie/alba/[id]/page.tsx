@@ -4,7 +4,7 @@ import { ArrowLeft, Trash2, ExternalLink } from 'lucide-react'
 import AlbumManager from './AlbumManager'
 import { redirect } from 'next/navigation'
 
-export default async function AlbumDetailPage({ params }: { params: { id: string } }) {
+export default async function AlbumDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const supabase = await createClient()
   const resolvedParams = await params
 

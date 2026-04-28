@@ -4,10 +4,10 @@ import Link from 'next/link'
 import { ArrowLeft, Calendar, Image as ImageIcon } from 'lucide-react'
 import PhotoGrid from '@/components/PhotoGrid'
 
-export default async function AlbumDetailPage({ 
+export default async function GalleryDetailPage({ 
   params 
 }: { 
-  params: { id: string } 
+  params: Promise<{ id: string }> 
 }) {
   const supabase = await createClient()
   const resolvedParams = await params
